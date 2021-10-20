@@ -6,15 +6,15 @@ try:
     while True:
         n1 = randint(2, 10)
         n2 = randint(2, 10)
-        puntentelling +=1
+        
         print('Wat is het product van volgende getallen?\n', n1, n2)
         try:
             answer = int(input('product: '))
         except ValueError:
             print('Ongeldig getal')
-            exit()
+            continue
         product = n1 * n2
-
+        puntentelling +=1
         if answer == product:
             print('Gefeliciteerd!')
             right_answers+=1
@@ -26,3 +26,4 @@ try:
 
 except KeyboardInterrupt:
     print("tot de volgende")
+    exit()
