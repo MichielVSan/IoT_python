@@ -27,7 +27,6 @@ except NameError:
         aantal_kleuren+=1
 print("dit zijn de mogelijke kleuren:", possible_colours)
 n= random.sample(range(0,aantal_kleuren), 4)
-print(n)
 n1=n[0]
 n2=n[1]
 n3=n[2]
@@ -57,7 +56,6 @@ while True:
         print("geen kleur uit de lijst gekozen.")
         continue
     aantal_gokken-=1
-    print("u hebt nog", aantal_gokken, "kansen")
     if (n1==g1 and n2==g2 and n3==g3 and n4==g4):
         print("u hebt het geraden!!!")
         exit()
